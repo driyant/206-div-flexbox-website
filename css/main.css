@@ -102,33 +102,77 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: 1.25em;
-  height: 100%;
+    background:black;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 2em;
+    font-size: 1.25em;
+    height: 100%;
+}
+
+header {
+    height: 200px;
+}
+
+header h1 {
+    margin-top: 0;
+    color: white;
+    font-size: 4em;
+}
+
+.about p {
+    color: white;
+    font-size: 1.5em;
+}
+
+span {
+    font-weight: bold;
 }
 
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
+    /*add display:flex and set justify-content to space-between*/
+    /* flex-start - 	Default value. Items are positioned at the beginning of the container 	
+    flex-end - 	Items are positioned at the end of the container 	
+    center -	Items are positioned in the center of the container 	
+    space-between - 	Items will have space between them 	
+    space-around -	Items will have space before, between, and after them 	
+    space-evenly -	Items will have equal space around them 	
+    initial  - Sets this property to its default value. Read about initial 	
+    inherit - Inherits this property from its parent element. Read about inherit */
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-top: 4em;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+
 }
 
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  height: 300px;
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+    color: #fff;
+    /* background-color: #f16059; */
+    height: 300px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    padding:0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.div-1 p {
+    padding-right: 10px;
+    border-right: 1px solid grey;
+}
 
+.div-2 p {
+    padding-right: 10px;
+    border-right: 1px solid grey;
+}
 
 
 /* ==========================================================================
